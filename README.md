@@ -13,7 +13,7 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: <img src="https://imgur.com/gqEw9GL" width="800">
+  - [ ] GIF Walkthrough: <img src="https://imgur.com/477edc2b-3797-49b6-abbd-8b12d0925032" width="800">
   - [ ] Steps to recreate: Go to comment section of one of the posts in WordPress, then leave the comment '<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  COMMENT HERE'></a>' where the comment has to be greater than or equal to 64 kb. Once you have posted this the exploit will show up.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.9/src/wp-includes/class-wp-comment.php#L15)

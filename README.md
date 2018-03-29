@@ -23,7 +23,7 @@ Time spent: **5** hours spent in total
     - Tested in version: 4.2.3
     - Fixed in version: 4.2.4
   - [ ] GIF Walkthrough: ![](https://imgur.com/a/v73oq)
-  - [ ] Steps to recreate: Administrator previews a theme on WordPress allowing for the removal of the onclick handler in the comment section of a post. A comment may now be posted as follows: <a href='/wp-admin/' title="" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;" onmouseover=alert(1)//'>Test</a>. This comment should've been: <a href='/wp-admin/' title="onclick='" Title='" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;" onmouseover=alert(1)//'>Test</a>, but because of the preview of the theme the onclick handler has been removed.
+  - [ ] Steps to recreate: Administrator previews a theme on WordPress allowing for the removal of the onclick handler in the comment section of a post. A comment may now be posted as follows: <a href='/wp-admin/' title="" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;" onmouseover=alert(1)//'>Test</a>. This comment should've been: ''<a href='/wp-admin/' title="onclick='" Title='" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;" onmouseover=alert(1)//'>Test</a>, but because of the preview of the theme the onclick handler has been removed.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.9/src/wp-includes/deprecated.php#L3473)
 3. (Required) Large File Upload Error XSS

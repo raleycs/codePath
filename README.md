@@ -13,7 +13,7 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: ![Alt Text](https://github.com/{raleycs}/{codePath}/raw/master/first.gif)
+  - [ ] GIF Walkthrough: ![](https://github.com/raleycs/codePath/blob/master/first.gif)
   - [ ] Steps to recreate: Go to comment section of one of the posts in WordPress, then leave the comment '<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  COMMENT HERE'></a>' where the comment has to be greater than or equal to 64 kb. Once you have posted this the exploit will show up.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.9/src/wp-includes/class-wp-comment.php#L15)
@@ -22,7 +22,7 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2.3
     - Fixed in version: 4.2.4
-  - [ ] GIF Walkthrough: ![Alt Text](https://github.com/{raleycs}/{codePath}/raw/master/second.gif)
+  - [ ] GIF Walkthrough: ![](https://github.com/raleycs/codePath/blob/master/second.gif)
   - [ ] Steps to recreate: Administrator previews a theme on WordPress allowing for the removal of the onclick handler in the comment section of a post. A comment may now be posted as follows: <a href='/wp-admin/' title="" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;" onmouseover=alert(1)//'>Test</a>. Because of the preview of the theme the onclick handler has been removed this all happened.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.9/src/wp-includes/deprecated.php#L3473)
@@ -31,7 +31,7 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.7.4
     - Fixed in version: 4.7.5
-  - [ ] GIF Walkthrough: ![Alt Text](https://github.com/{raleycs}/{codePath}/raw/master/third.gif)
+  - [ ] GIF Walkthrough: ![](https://github.com/raleycs/codePath/blob/master/third.gif)
   - [ ] Steps to recreate: Create an image file that is ~20 MB large and name it some text with <img src=x onerror=alert(1)>. Upload this file at http://wpdistillery.vm/wp-admin/media-new.php and the alert should pop up.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.9/src/wp-includes/class-wp-xmlrpc-server.php#L5877)

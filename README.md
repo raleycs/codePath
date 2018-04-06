@@ -86,7 +86,7 @@ Describe any challenges encountered while doing the work
     limitations under the License.
     
     
-    # Project 8 - Pentesting Live Targets
+   # Project 8 - Pentesting Live Targets
 
 Time spent: **X** hours spent in total
 
